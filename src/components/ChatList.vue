@@ -20,7 +20,7 @@ import { db } from '../firebase';
                 chats: []
             }
         },
-        // firestore component manages the real-time stream to that reactive data property
+        // vuefire firestore component manages the real-time stream to that reactive data property
         firestore() {
             return {
                 chats: db.collection('chats').where('owner', '==', this.uid)
