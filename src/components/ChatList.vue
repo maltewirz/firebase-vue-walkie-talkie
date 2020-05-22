@@ -28,7 +28,7 @@ import { db } from '../firebase';
         },
         methods: {
             async createChatRoom() {
-                const newChat = await db.collection('chats').add({
+                await db.collection('chats').add({
                     createdAt: Date.now(),
                     owner: this.uid,
                     members: [this.uid]
