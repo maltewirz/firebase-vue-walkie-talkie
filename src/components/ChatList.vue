@@ -32,10 +32,7 @@ import { db } from '../firebase';
                     createdAt: Date.now(),
                     owner: this.uid,
                     members: [this.uid]
-                })
-
-                console.log(newChat);
-                
+                })                
             }
         },
         props: ['uid']

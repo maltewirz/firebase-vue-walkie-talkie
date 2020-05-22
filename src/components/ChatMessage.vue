@@ -2,8 +2,9 @@
     <div class="message" :class="{ 'from-user': owner }">
 
         {{ message.text }}
+        <audio v-if="message.audioURL" :src="message.audioURL" controls></audio><br>
 
-        <br> <span class="sender">from UID {{ message.sender }}</span>
+        <span class="sender">from UID {{ message.sender }}</span>
 
     </div>
 </template>
