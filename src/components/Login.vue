@@ -55,11 +55,9 @@ export default {
             } catch (error) {
                 this.errorMessage = error;
             }
-
             this.loading = false;
         }
     }
-    
 }
 </script>
 

@@ -1,7 +1,6 @@
 <template>
     <div>
         <slot name="user" :user="user"></slot>
-
     </div>
 </template>
 
@@ -21,7 +20,6 @@ export default {
             unsubscribe,
         }
     },
-
     destroyed() {
         // dispose real time stream when its no longer needed
         this.unsubscribe()

@@ -21,7 +21,6 @@
 
             <audio v-if="newAudio" :src="newAudioURL" controls></audio>
 
-
             <hr>
             <button
                 :disabled="(!newMessageText && !newAudio) || loading"
